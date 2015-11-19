@@ -3,11 +3,9 @@
 
 Some draft notes and documentation on using [CartoDB](https://cartodb.com) to do some data visualization and GIS, including how to collect that data from the source, and how to use SQL to wrangle it for analytical and visualization purposes.
 
-The [Maps](#maps) section contains example maps, as well as the SQL needed to create their datasets.
-
-The [Datasets](#datasets) section documents where on the Web I found the data as well as the actual file downloaded.
-
-The [Join/lookup tables](#join-lookup-tables) section shows the SQL for deriving the intermediary datasets needed to link the official datasets, e.g. how the [pretracts_lookup](https://dunnguyen.cartodb.com/tables/pretracts_lookup) is used to associate each Census tract to a NYPD precinct, which allows for the [calculation of Census population by NYPD precinct](http://bit.ly/1Qv4Lxr).
+- The [Maps](#maps) section contains example maps, as well as the SQL needed to create their datasets.
+- The [Datasets](#datasets) section documents where on the Web I found the data as well as the actual file downloaded.
+- The [Join/lookup tables](#joinlookup-tables) section shows the SQL for deriving the intermediary datasets needed to link the official datasets, e.g. how the [pretracts_lookup](https://dunnguyen.cartodb.com/tables/pretracts_lookup) is used to associate each Census tract to a NYPD precinct, which allows for the [calculation of Census population by NYPD precinct](http://bit.ly/1Qv4Lxr).
 
 
 # Maps (so far)
@@ -15,7 +13,7 @@ The [Join/lookup tables](#join-lookup-tables) section shows the SQL for deriving
 ## [Census total population by NYPD precinct](http://bit.ly/1Qv4Lxr)
 
 <a href="http://bit.ly/1Qv4Lxr">
-  <img src="http://imgur.com/GNytrbe" alt="Census total population by NYPD precinct">
+  <img src="http://i.imgur.com/GNytrbe.png" alt="Census total population by NYPD precinct">
 </a>
 
 
@@ -68,7 +66,7 @@ INNER JOIN
   - Download: [Police Precincts (Clipped to Shoreline)](http://www.nyc.gov/html/dcp/download/bytes/nypp_15c.zip) 
 - [nypd_crimedata](https://dunnguyen.cartodb.com/tables/nypd_crimedata) - NYPD's historical crime statistics at the precinct level
   - Source: [I have a separate repo describing the stats compilation process](https://github.com/datahoarder/nypd-historical-crime-stats)
-  - Download: [Compiled precinct-level crime stats 2000 to 2014 (.csv)](https://github.com/datahoarder/nypd-historical-crime-stats/blob/master/data/compiled/nypd-precinct-historical-crime-data.csv)
+  - Download: [Compiled precinct-level crime stats 2000 to 2014 (.csv)](https://github.com/datahoarder/nypd-historical-crime-stats/raw/master/data/compiled/nypd-precinct-historical-crime-data.csv)
 
 ## Join/lookup tables
 
